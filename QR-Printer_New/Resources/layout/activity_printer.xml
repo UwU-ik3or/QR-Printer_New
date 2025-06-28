@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image">
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#99000000">
+
+		<TextView
+            android:id="@+id/PrinterConnectionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Статус: Не подключено"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+		<ProgressBar
+            android:id="@+id/ConnectionStatusBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+		<Button
+            android:id="@+id/ConnectToPrinterButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Подключиться"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+		<Button
+            android:id="@+id/DisconnectFromPrinterButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Отключиться"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:enabled="false"/>
+
+		<EditText
+            android:id="@+id/ScanResultText"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Введите текст для печати"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:textSize="18sp"
+            android:enabled="false"
+            android:textColor="#FFFFFF"
+            android:background="#55000000"/>
+
+		<Button
+            android:id="@+id/PrintScanResultTextButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Печать текста"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:enabled="false"/>
+	</LinearLayout>
+</RelativeLayout>

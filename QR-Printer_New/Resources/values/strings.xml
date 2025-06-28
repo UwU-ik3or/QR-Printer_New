@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">QR_Printer_New</string>
-    <string name="app_text">Hello, Android!</string>
+    <string name="app_name">QR-Printer</string>
 </resources>
